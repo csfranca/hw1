@@ -157,7 +157,7 @@ CREATE TABLE actors (
 CREATE TABLE crew (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   movies_id INTEGER,
-  studios_id INTEGER,
+  actors_id INTEGER,
   character_name TEXT
 );
 
@@ -234,4 +234,59 @@ VALUES (
   2012,
   "PG-13",
   1
+);
+
+INSERT INTO crew (
+  movies_id,
+  actors_id,
+  character_name
+)
+VALUES (
+    1,
+    1,
+    "Bruce Wayne"
+);
+
+INSERT INTO crew (
+  movies_id,
+  actors_id,
+  character_name
+)
+VALUES (
+    1,
+    2,
+    "Alfred"
+);
+
+INSERT INTO crew (
+  movies_id,
+  actors_id,
+  character_name
+)
+VALUES (
+    1,
+    3,
+    "Ra's Al Ghul"
+);
+
+INSERT INTO crew (
+  movies_id,
+  actors_id,
+  character_name
+)
+VALUES (
+    1,
+    4,
+    "Rachel Dawes"
+);
+
+INSERT INTO crew (
+  movies_id,
+  actors_id,
+  character_name
+)
+VALUES (
+    1,
+    5,
+    "Rachel Dawes"
 );
