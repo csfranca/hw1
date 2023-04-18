@@ -139,9 +139,9 @@ DROP TABLE IF EXISTS crew;
 CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title TEXT,
-  year_released TEXT,
+  year_released INTEGER,
   mpaa_rating TEXT,
-  studios_id TEXT
+  studios_id INTEGER
 );
 
 CREATE TABLE studios (
@@ -156,7 +156,7 @@ CREATE TABLE actors (
 
 CREATE TABLE crew (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  movies_id TEXT,
-  studios_id TEXT,
+  movies_id INTEGER,
+  studios_id INTEGER,
   character_name TEXT
 );
