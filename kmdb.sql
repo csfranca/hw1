@@ -160,3 +160,10 @@ CREATE TABLE crew (
   studios_id INTEGER,
   character_name TEXT
 );
+
+INSERT INTO studios (
+  name
+)
+VALUES (
+  "Warner Bros."
+);
