@@ -209,3 +209,29 @@ VALUES (
   "PG-13",
   1
 );
+
+INSERT INTO movies (
+  title,
+  year_released,
+  mpaa_rating,
+  studios_id
+)
+VALUES (
+  "The Dark Knight",
+  2008,
+  "PG-13",
+  1
+);
+
+INSERT INTO movies (
+  title,
+  year_released,
+  mpaa_rating,
+  studios_id
+)
+VALUES (
+  "The Dark Knight Rises",
+  2012,
+  "PG-13",
+  1
+);
