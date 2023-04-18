@@ -136,3 +136,27 @@ DROP TABLE IF EXISTS studios;
 DROP TABLE IF EXISTS actors;
 DROP TABLE IF EXISTS crew;
 
+CREATE TABLE movies (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  year_released TEXT,
+  mpaa_rating TEXT,
+  studios_id TEXT
+);
+
+CREATE TABLE studios (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT
+);
+
+CREATE TABLE actors (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT
+);
+
+CREATE TABLE crew (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  movies_id TEXT,
+  studios_id TEXT,
+  character_name TEXT
+);
