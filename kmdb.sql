@@ -196,3 +196,16 @@ VALUES
   ("Joseph Gordon-Levitt"),
   ("Anne Hathaway"
 );
+
+INSERT INTO movies (
+  title,
+  year_released,
+  mpaa_rating,
+  studios_id
+)
+VALUES (
+  "Batman Begins",
+  2005,
+  "PG-13",
+  1
+);
