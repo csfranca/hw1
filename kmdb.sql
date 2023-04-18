@@ -167,3 +167,32 @@ INSERT INTO studios (
 VALUES (
   "Warner Bros."
 );
+
+INSERT INTO actors (
+  name
+)
+VALUES (
+  "Christian Bale"
+);
+
+INSERT INTO actors (
+  name
+)
+VALUES (
+  "Michael Caine"
+);
+
+INSERT INTO actors (
+  name
+)
+VALUES 
+  ("Liam Neeson"),
+  ("Katie Holmes"),
+  ("Gary Oldman"),
+  ("Heath Ledger"),
+  ("Aaron Eckhart"),
+  ("Maggie Gyllenhaal"),
+  ("Tom Hardy"),
+  ("Joseph Gordon-Levitt"),
+  ("Anne Hathaway"
+);
