@@ -267,7 +267,7 @@ INSERT INTO crew (
 VALUES (
     1,
     5,
-    "Rachel Dawes"
+    "Commissioner Gordon"
 );
 
 INSERT INTO crew (
@@ -398,10 +398,13 @@ ORDER BY movies.year_released;
 .print "========"
 .print ""
 
-
 -- The SQL statement for the cast output
 -- TODO!
-
+SELECT movies.title, actors.name, character_name
+FROM crew
+INNER JOIN movies ON crew.movies_id = movies.id
+INNER JOIN actors ON crew.actors_id = actors.id
+ORDER BY movies.title;
 
 
 
