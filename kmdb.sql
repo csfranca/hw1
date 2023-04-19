@@ -117,6 +117,10 @@
 .print "Movies"
 .print "======"
 .print ""
+SELECT distinct movies.title, movies.year_released, movies.mpaa_rating, studios.name
+FROM movies
+INNER JOIN studios ON movies.studios_id = studios.id
+ORDER BY movies.year_released;
 
 -- The SQL statement for the movies output
 -- TODO!
@@ -400,3 +404,5 @@ VALUES (
     11,
     "Selina Kyle"
 );
+
+
